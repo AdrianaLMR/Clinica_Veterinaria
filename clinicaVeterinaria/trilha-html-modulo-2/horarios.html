@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horário de Funcionamento</title>
+    <link rel="stylesheet" href="assets/base.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <img id="logotipo" src="assets/imgs/logotipo.jpg">
+            <ul>
+                <li>
+                    <a href="home.html" target="_blank">Página Principal</a>
+                </li>
+                <br>
+                <li>
+                    <a href="sobreClinica.html" target="_blank">Sobre a Clínica</a>
+                </li>
+                <br>
+                <li>
+                    <a href="contato.html" target="_blank">Contato</a>
+                </li>
+                <br>
+                <li>
+                    <a href="#">Horário de Funcionamento</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <img id="img_header" src="assets/imgs/header_horarios2.jpg" alt="Na imagem apresenta um grupo de animais deitados, quatro cachorros , dois com um estetoscópio na boca, quatro gatos, um deles está segurando o esteoscópio com as patinhas e por último um ramister." widht="110%" height="370px" margin="15px 10px" style="margin-right: 59px; margin-left: 4px;">
+            </div>
+    
+            <div class="content">
+                <h1><i>Horário de Funcionamento</i></h1>
+                <table class="tabela1" summary="Está tabela se refere a uma tabela que mostra os horários de atendimento de acordo com o serviço e o dia da semana."  width="900" border="1" cellspacing="5" cellpadding="4" >
+                    <thead>
+                        <tr>
+                            <th>Serviço</th>
+                            <th>Segunda a sexta</th> 
+                            <th>Valores</th>
+                            <th>Sábados</th> 
+                            <th>Valores</th>
+                            <th>Feriados</th>
+                            <th>Valores</th>
+                         </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="1">
+                            <td>Atendimento clínico e médico</td>
+                            <td>08:00 ás 20:00</td>
+                            <td>100</td>
+                            <td>08:00 ás 14:00</td>
+                            <td>120</td>
+                            <td>08:00 ás 12:00</td>
+                            <td>130</td>
+                        </tr>
+                        <tr id="2">
+                            <td>Consultas</td>
+                            <td>08:00 ás 20:00</td>
+                            <td>80</td>
+                            <td>08:00 ás 14:00</td>
+                            <td>100</td>
+                            <td>08:00 ás 12:00</td>
+                            <td>110</td>
+                        </tr>
+                        <tr i data-3="">
+                            <td>Vacinação</td>
+                            <td>08:00 ás 20:00</td>
+                            <td>150</td>
+                            <td>08:00 ás 14:00</td>
+                            <td>170</td>
+                            <td>08:00 ás 12:00</td>
+                            <td>180</td>
+                        </tr>
+                        <tr id="4">
+                            <td>Aferição de pressão arterial</td>
+                            <td>08:00 ás 20:00</td>
+                            <td>50</td>
+                            <td>08:00 ás 14:00</td>
+                            <td>50</td>
+                            <td>08:00 ás 12:00</td>
+                            <td>60</td>
+                        </tr>
+                        <tr id="5">
+                            <td>Exames laboratórial e de imagem como : raio-x, ultrassom, ecocardiograma e eletrocardiograma</td>
+                            <td>08:00 ás 20:00</td>
+                            <td>300</td>
+                            <td>08:00 ás 14:00</td>
+                            <td>350</td>
+                            <td>08:00 ás 12:00</td>
+                            <td>380</td>
+                        </tr>
+                        <tr id="6">
+                            <td>Castração</td>
+                            <td>08:00 ás 20:00</td>
+                            <td>500</td>
+                            <td>08:00 ás 14:00</td>
+                            <td>580</td>
+                            <td>08:00 ás 12:00</td>
+                            <td>520</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <hr>
+                <label><b>Para agendamento de algum serviço específico preencha o formulário:</b></label>
+                <br><br>
+                <form name="Horários" onsubmit="alert('Formulário de agendamento enviado!!');" method="off" autocomplete="off" target="_blank" method="post" action="http://127.0.0.1:5501/Curso%20HTML%20CSS3-DIO/clinicaVeterinaria/trilha-html-modulo-2/horarios.html/Horários" style="background-color:rgb(165, 178, 180);">
+                    <fieldset>
+                    <label>Nome<small title="Obrigatório">*</a></small></label><br><input type="text" name="name">
+                    <br>
+                    <label>E-mail<small title="Obrigatório">*</a></small>:</label><br><input type="email"/>
+                    <br>
+                    <label>Selecione um serviço<small title="Obrigatório">*</a></small>:</label>
+                    <br>
+                    <select name="role" >
+                        <option value="">Agendar</option>
+                        <option value="atendimento_clinico_medico"> Atendimento clínico e médico</option>
+                        <option value="consultas"> Consultas</option>
+                        <option value="vacinacao"> Vacinação</option>
+                        <option value="afericao_pressao_arterial	"> Aferição de pressão arterial	</option>
+                        <option value="exames_laboratorial"> Exames laboratórial</option>
+                        <option value="castracao"> Castração</option>
+                     </select>
+                     <br>
+                   <label>Enviar Formulário:</label><br>
+                   <input type="submit" value="Enviar"/>
+                   <button type="reset">Enviar uma nova resposta</button>
+                   <br>
+                </fieldset>
+                </form>
+                <br><hr>
+            </div>
+
+           <div class="footer">
+              <h2>Informações de contato:</h2>
+              <p>
+                  Email: ClínicaVeterinária@gmail.com
+             </p>
+             <p>
+                Contato: (00) 000000000
+            </p>
+            <p>
+                Endereço: Rua Fantasia, 000 - Bairro Fantasia - Cidade Fantasia - XX - CEP: 00000-000
+            </p>
+           </div>
+        </div>
+    </div>
+</body>
+</html>
